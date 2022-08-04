@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/3dea8a47ab.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
+
+    <header>
+        
+        <link rel="stylesheet" href="static/styles.css">
+        <img src="static/Logo.png" alt="Corleone">
+
+    </header>
+
+    <body onunload="ReturnBack()">
+        
+        <script>
+            function ReturnBack(){
+                var btn = document.getElementById("MyH1");
+            // btn.value = 'my value'; // will just add a hidden value
+                btn.innerHTML = 'Press on the mic to record'
+            }
+            
+            function change(){
+
+            
+            var btn = document.getElementById("MyH1");
+            // btn.value = 'my value'; // will just add a hidden value
+            btn.innerHTML = 'Recording.....'
+            }
+            
+        </script>
+        <form class="MyForm" action="Record" method="post">
+            <h1 id="MyH1">{{value}}</h1>
+            <br>
+            <br>
+            <button onclick="change()" style="background-color: transparent; border: none;" type="submit">
+               <img class="recorder" src="static\MyMic.png" style="width: 50%; height: 50%;;">
+            </button>
+        
+            
+        </form>
+        
+    </body>
+</html>

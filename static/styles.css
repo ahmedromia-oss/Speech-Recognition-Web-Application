@@ -1,0 +1,22 @@
+body{
+    background-color: #2c0444;
+}
+
+.MyForm{
+    text-align: center;
+}
+
+h1{
+    color: #f5b43c;
+    font-family:fantasy;
+    size: 60px;
+}
+.recorder:hover{
+    box-shadow: #2c0444;
+    width: 60%;
+    height: 60%;
+}
+
+button{
+    cursor: pointer;
+}
